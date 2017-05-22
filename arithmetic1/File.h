@@ -12,7 +12,7 @@ private:
 	string outputFilePath;
 };
  
-class CFileResource:public CFile
+class CResource:public CFile
 {
 public:
 	
