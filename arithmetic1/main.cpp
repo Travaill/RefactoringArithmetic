@@ -9,9 +9,7 @@ int main()
 	srand((unsigned)time(NULL));
 	CExpression obj;
 	obj.InitExpression();
-	string exp;
-	obj.GetExpression(exp);
-	cout << exp<<endl;
+	cout << obj.GetExpression() << "=" << obj.GetResult() <<endl;
 	system("pause");
 	return 0;
 }

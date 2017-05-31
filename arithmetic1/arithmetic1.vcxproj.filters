@@ -32,5 +32,11 @@
     <ClCompile Include="Expression.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Control.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

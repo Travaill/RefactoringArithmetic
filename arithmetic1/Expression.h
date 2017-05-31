@@ -1,19 +1,25 @@
 #pragma once
 #include<string>
+#include <stack>
+#include"Control.h"
 using namespace std;
 class CExpression
 {
 public:
 	void InitExpression();
-	void GetExpression(string &str);
-	friend bool JudgeExpression(string str);
-	friend bool JudgeResult(double res);
+	string GetExpression();
+	int GetResult();
+	friend bool CControl::JudgeExpression(string str);
+	friend bool CControl::JudgeResult(double res);
 private:
 	string exp;
 	double res;
+	stack<double> num_stk;
+	stack<char> ope_stk;
 	int RandomNumber(int low, int high);
 	char RandomOperation();
-	double CalculateResult(string str);
+	void RandomExpression();
+	void CalculateResult();
 	void CalculatePolynomial();
 	int OpeRank(char x);
 };

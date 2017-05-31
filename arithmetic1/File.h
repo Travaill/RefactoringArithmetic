@@ -8,16 +8,16 @@ public:
 	bool JudgeIfGet();
 	void OutputFile();
 private:
-	string inputFilePath;
+	string inputFilePath; 
 	string outputFilePath;
 };
  
 class CResource:public CFile
 {
 public:
-	
-private:
 	string resouceFilePath;
-	string recouce[8];
+	string resource[8];
+private:
+
 };
 
