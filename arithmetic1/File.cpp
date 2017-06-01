@@ -1,21 +1,20 @@
 #include"File.h"
 #include<fstream>
 #include<sstream>
-int CFile::ReadFile()
+template <class T>
+T CFile::ReadFile(T x)
 {
-	int counts;
 	fstream file;
 	file.open(inputFilePath, ios::in);
-	file >> counts;
+	file >> x;
 	file.close();
-	return counts;
+	return x;
 }
 
 bool CFile::JudgeIfGet()
 {
 	fstream file;
 	stringstream ss;
-	char filepath[200] = "";
 	file.open(inputFilePath,ios::in);
 	if (file.is_open())
 	{
@@ -26,4 +25,13 @@ bool CFile::JudgeIfGet()
 	{
 		return false;
 	}
+}
+
+template<class T>
+void CFile::OutputFile(T x)
+{
+	fstream fout;
+	fout.open(outputFilePath, ios::app);
+	fout << x;
+	fout.close();
 }

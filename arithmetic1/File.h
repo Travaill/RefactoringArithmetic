@@ -4,20 +4,20 @@ using namespace std;
 class CFile
 {
 public:
-	int  ReadFile();
+	template<class T>
+	T  ReadFile(T x);
+	template<class T>
+	void OutputFile(T x);
 	bool JudgeIfGet();
-	void OutputFile();
+	CFile(char *input,char* output)
+	{
+		inputFilePath = input;
+		outputFilePath = output;
+	}
 private:
-	string inputFilePath; 
-	string outputFilePath;
+	char* inputFilePath; 
+	char* outputFilePath;
 };
  
-class CResource:public CFile
-{
-public:
-	string resouceFilePath;
-	string resource[8];
-private:
 
-};
 

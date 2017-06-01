@@ -1,7 +1,10 @@
 ﻿  main.cpp
-  Expression.cpp
-c:\users\administrator\desktop\refactoringarithmetic\arithmetic1\expression.cpp(13): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-c:\users\administrator\desktop\refactoringarithmetic\arithmetic1\expression.cpp(67): warning C4018: “<”: 有符号/无符号不匹配
   正在生成代码...
+  正在编译...
+  File.cpp
+  正在生成代码...
+  正在跳过...(未检测到相关更改)
+  resource.cpp
+  counter.cpp
   arithmetic1.vcxproj -> C:\Users\Administrator\Desktop\RefactoringArithmetic\Debug\arithmetic1.exe
   arithmetic1.vcxproj -> C:\Users\Administrator\Desktop\RefactoringArithmetic\Debug\arithmetic1.pdb (Partial PDB)

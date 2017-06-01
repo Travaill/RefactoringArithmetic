@@ -18,10 +18,13 @@
     <ClInclude Include="Expression.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Control.h">
+    <ClInclude Include="File.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="File.h">
+    <ClInclude Include="COUNTER.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -32,10 +35,13 @@
     <ClCompile Include="Expression.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Control.cpp">
+    <ClCompile Include="File.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="File.cpp">
+    <ClCompile Include="counter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resource.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

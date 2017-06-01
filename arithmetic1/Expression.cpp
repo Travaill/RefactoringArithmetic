@@ -5,8 +5,12 @@ using namespace std;
 
 void CExpression::InitExpression()   //≥ı ºªØ
 {
-	RandomExpression();
-	CalculateResult();
+	do
+	{
+		RandomExpression();
+		CalculateResult();
+	} while (JudgeExpression() || JudgeResult());
+
 }
 
 string CExpression::GetExpression()
@@ -144,5 +148,41 @@ int CExpression::OpeRank(char x)
 	case '(': return 1;
 	case ')': return -2;
 	default:return -1;
+	}
+}
+
+bool CExpression::JudgeExpression()
+{
+	char ptr[35];
+	strcpy_s(ptr,exp.c_str());
+	const char *substr[] = { "/0" ,"/(1-1)","/(2-2)","/(3-3)","/(4-4)","/(5-5)","/(6-6)","/(7-7)","/(8-8)","/(9-9)","/(10-10)" };
+	char *s;
+	for (int i = 0; i <= 10; i++)
+	{
+		s = strstr(ptr, substr[i]);
+		if (s != NULL)
+		{
+			break;
+		}
+	}
+	if (s == NULL)
+	{
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}
+
+bool CExpression::JudgeResult()
+{
+	if ((int)res == res&&abs(res) <= 100)
+	{
+		return false;
+	}
+	else
+	{
+		return true;
 	}
 }

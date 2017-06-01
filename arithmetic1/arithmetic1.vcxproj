@@ -112,14 +112,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Expression.h" />
-    <ClInclude Include="Control.h" />
+    <ClInclude Include="COUNTER.h" />
     <ClInclude Include="File.h" />
+    <ClInclude Include="Resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Expression.cpp" />
     <ClCompile Include="File.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Control.cpp" />
+    <ClCompile Include="counter.cpp" />
+    <ClCompile Include="resource.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
